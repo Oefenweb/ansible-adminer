@@ -25,5 +25,5 @@
     dest: "{{ item }}/adminer.php"
     state: link
   with_items: adminer_install_dirs
-  when: adminer_install_dirs
+  when: adminer_install_dirs is defined
   tags: [configuration, adminer, adminer-download ]
