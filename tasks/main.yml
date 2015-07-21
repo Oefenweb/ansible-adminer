@@ -11,7 +11,7 @@
 
 - name: download (latest)
   get_url:
-    url: http://www.adminer.org/latest.php
+    url: "{{ adminer_download_url }}"
     dest: "{{ adminer_download_path }}/latest.php"
     owner: root
     group: root
