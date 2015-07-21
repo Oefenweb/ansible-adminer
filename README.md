@@ -6,12 +6,11 @@ Set up [adminer](http://www.adminer.org/) (Database management in a single PHP f
 
 #### Requirements
 
-* `apache2`
-* `php5`
+None
 
 #### Variables
 
-* `adminer_install_dirs` [default: `[]`]: Directories to install adminer to (e.g. `/var/www`)
+* `adminer_install_dirs`: [default: `[]`]: Directories to install adminer to (e.g. `/var/www`)
 
 ## Dependencies
 
@@ -23,7 +22,7 @@ None
 ---
 - hosts: all
   roles:
-  - adminer
+    - adminer
 ```
 
 #### License
