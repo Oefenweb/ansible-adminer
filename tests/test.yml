@@ -3,7 +3,7 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-adminer
+    - ../../
   vars:
     adminer_install_dirs:
       - /tmp
