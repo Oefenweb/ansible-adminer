@@ -7,7 +7,10 @@
     owner: root
     group: root
     mode: 0755
-  tags: [configuration, adminer, adminer-download]
+  tags:
+    - configuration
+    - adminer
+    - adminer-download
 
 - name: download (latest)
   get_url:
@@ -17,7 +20,10 @@
     group: root
     mode: 0644
     force: true
-  tags: [configuration, adminer, adminer-download]
+  tags:
+    - configuration
+    - adminer
+    - adminer-download
 
 - name: install
   file:
@@ -25,5 +31,8 @@
     dest: "{{ item }}/adminer.php"
     state: link
     force: true
-  with_items: adminer_install_dirs
-  tags: [configuration, adminer, adminer-install]
+  with_items: "{{ adminer_install_dirs }}"
+  tags:
+    - configuration
+    - adminer
+    - adminer-install
