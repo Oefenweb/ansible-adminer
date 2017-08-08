@@ -1,4 +1,4 @@
 # vars file for adminer
 ---
 adminer_download_path: /var/lib/ansible/adminer/downloads
-adminer_download_url: http://www.adminer.org/latest.php
+adminer_download_url: https://www.adminer.org/latest.php
