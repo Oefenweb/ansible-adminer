@@ -10,6 +10,7 @@ None
 
 #### Variables
 
+* `adminer_download_url`: [default: `https://www.adminer.org/latest.php`]: Download url
 * `adminer_install_dirs`: [default: `[]`]: Directories to install adminer to (e.g. `/var/www`)
 
 ## Dependencies
