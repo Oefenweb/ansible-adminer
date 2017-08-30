@@ -20,6 +20,7 @@
     group: root
     mode: 0644
     force: true
+    timeout: 60
   tags:
     - configuration
     - adminer
