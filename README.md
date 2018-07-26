@@ -1,6 +1,6 @@
 ## adminer
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-adminer.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-adminer) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-adminer-blue.svg)](https://galaxy.ansible.com/list#/roles/1961)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-adminer.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-adminer) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-adminer-blue.svg)](https://galaxy.ansible.com/Oefenweb/adminer)
 
 Set up [adminer](http://www.adminer.org/) (Database management in a single PHP file).
 
