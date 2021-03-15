@@ -1,3 +1,3 @@
-# vars file for adminer
+# vars file
 ---
 adminer_download_path: /var/lib/ansible/adminer/downloads

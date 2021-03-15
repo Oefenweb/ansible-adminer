@@ -1,4 +1,4 @@
-# vars file for adminer
+# vars file
 ---
 adminer_install_dirs:
   - /tmp
