@@ -50,12 +50,12 @@
         dest: "{{ item }}/{{ adminer_css_file }}"
         state: link
         force: true
-      when: adminer_no_darkmode | bool == true
+      when: adminer_no_darkmode | bool
       with_items: "{{ adminer_install_dirs }}"
 
     - name: dark mode | allow
       ansible.builtin.file:
         path: "{{ item }}/{{ adminer_css_file }}"
         state: absent
-      when: adminer_no_darkmode | bool == false
+      when: not adminer_no_darkmode | bool
       with_items: "{{ adminer_install_dirs }}"
