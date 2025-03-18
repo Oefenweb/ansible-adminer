@@ -13,6 +13,7 @@ None
 
 * `adminer_download_url`: [default: `https://www.adminer.org/latest.php`]: Download url
 * `adminer_install_dirs`: [default: `[]`]: Directories to install adminer to (e.g. `/var/www`)
+* `adminer_no_darkmode`: [default: `false`]: Prevent dark mode (color scheme)
 
 ## Dependencies
 

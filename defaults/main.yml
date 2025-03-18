@@ -2,3 +2,4 @@
 ---
 adminer_download_url: https://www.adminer.org/latest.php
 adminer_install_dirs: []
+adminer_no_darkmode: false

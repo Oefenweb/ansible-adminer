@@ -6,7 +6,7 @@
     state: directory
     owner: root
     group: root
-    mode: 0755
+    mode: '0755'
   tags:
     - configuration
     - adminer
@@ -18,7 +18,7 @@
     dest: "{{ adminer_download_path }}/latest.php"
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
     force: true
     timeout: 60
   tags:
@@ -37,3 +37,25 @@
     - configuration
     - adminer
     - adminer-install
+
+- name: dark mode
+  tags:
+    - configuration
+    - adminer
+    - adminer-dark-mode
+  block:
+    - name: dark mode | disallow
+      ansible.builtin.file:
+        src: /dev/null
+        dest: "{{ item }}/adminer.css"
+        state: link
+        force: true
+      when: adminer_no_darkmode | bool == true
+      with_items: "{{ adminer_install_dirs }}"
+
+    - name: dark mode | allow
+      ansible.builtin.file:
+        path: "{{ item }}/adminer.css"
+        state: absent
+      when: adminer_no_darkmode | bool == false
+      with_items: "{{ adminer_install_dirs }}"
