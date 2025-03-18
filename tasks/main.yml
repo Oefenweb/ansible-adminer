@@ -47,7 +47,7 @@
     - name: dark mode | disallow
       ansible.builtin.file:
         src: /dev/null
-        dest: "{{ item }}/adminer.css"
+        dest: "{{ item }}/{{ adminer_css_file }}"
         state: link
         force: true
       when: adminer_no_darkmode | bool == true
@@ -55,7 +55,7 @@
 
     - name: dark mode | allow
       ansible.builtin.file:
-        path: "{{ item }}/adminer.css"
+        path: "{{ item }}/{{ adminer_css_file }}"
         state: absent
       when: adminer_no_darkmode | bool == false
       with_items: "{{ adminer_install_dirs }}"
